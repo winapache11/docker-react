@@ -9,4 +9,5 @@ before_install:
 
 
 script:
-  - docker run -e CI=true winapache11/docker-react npm rum test
+  #- docker run -e CI=true winapache11/docker-react npm rum test -- --coverage
+  - docker run winapache11/docker-react npm rum test -- --coverage
